@@ -1,0 +1,2 @@
+{"id":10001,"distance":200,"frozen":10,"y_distance":160}
+{"id":10002,"distance":200,"frozen":10,"y_distance":160}

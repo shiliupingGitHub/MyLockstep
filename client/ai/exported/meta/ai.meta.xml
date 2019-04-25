@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<agents version="1" signature="622566950">
+  <agent type="AIAgent" base="behaviac::Agent" signature="3552854483">
+    <properties>
+      <property name="mMoveDir" type="int" member="false" static="false" defaultvalue="0" />
+    </properties>
+  </agent>
+</agents>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="be" folder="behaviors" export="..\unity\Assets\Res\Behavour" language="cpp" version="3">
+  <export>
+    <cpp>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../../lockstep/lockstep/include/behavour</folder>
+    </cpp>
+  </export>
+</workspace>
