@@ -96,7 +96,7 @@ Entity* World::FindEntity(unsigned long long id)
 bool World::Load(const level_data map)
 {
 
-	const char* data = Controller::GetInstance()->InvokeReadFile(MAP_CONFIG_TYPE, map.mapId);
+	const char* data = Controller::GetInstance()->ReadFile(MAP_CONFIG_TYPE, map.mapId);
 	mRand->SetSeed(map.mapId);
 	if (data != nullptr)
 	{
@@ -120,7 +120,7 @@ bool World::Load(const level_data map)
 bool World::load_entity(entity_data& ed)
 {
 	
-	const char* data = Controller::GetInstance()->InvokeReadFile(ENTITY_CONFIG_TYPE, ed.config_id);
+	const char* data = Controller::GetInstance()->ReadFile(ENTITY_CONFIG_TYPE, ed.config_id);
 
 	if (nullptr != data)
 	{

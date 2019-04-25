@@ -10,7 +10,7 @@ namespace lockstep
 {
 	Collider2DComponent::Collider2DComponent(World* pWorld, Entity* pEntity, int id):Component(pWorld, pEntity), mPCollier(nullptr)
 	{
-		const char* content = Controller::GetInstance()->InvokeReadFile(COMPONENT_CONFIG_FILE, id, "collider2d");
+		const char* content = Controller::GetInstance()->ReadFile(COMPONENT_CONFIG_FILE, id, "collider2d");
 		Document data;
 		data.Parse(content);
 		

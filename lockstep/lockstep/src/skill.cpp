@@ -10,7 +10,7 @@ Skill::Skill( World* pWorld, Entity* pEntity, int id):mId(id),
 mPEntity(pEntity), mPWorld(pWorld),mPAni(nullptr), mCurIndex(0),
 mUseIndex(0)
 {
-	auto data = Controller::GetInstance()->InvokeReadFile(SKILL_CONFIG_TYPE, id);
+	auto data = Controller::GetInstance()->ReadFile(SKILL_CONFIG_TYPE, id);
 	
 	if (nullptr != data)
 	{

@@ -18,7 +18,7 @@ namespace lockstep
 	void ani_config::Load()
 	{
 		mData.clear();
-		string content =  Controller::GetInstance()->InvokeReadFile(CONFIG_FILE, 0, "ani_config");
+		string content =  Controller::GetInstance()->ReadFile(CONFIG_FILE, 0, "ani_config");
 		vector<string> config_str = split(content, "\n");
 		for (auto it = config_str.begin(); it != config_str.end(); it++)
 		{

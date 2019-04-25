@@ -15,7 +15,7 @@ namespace lockstep
 	{
 		ani_config* pAniConfig = (ani_config*)ConfigManager::GetInstance().Get("ani_config");
 		mAniData = *pAniConfig->Get(id);
-		const char* data = Controller::GetInstance()->InvokeReadFile(ANIMATION_CONFIG_TYPE, id);
+		const char* data = Controller::GetInstance()->ReadFile(ANIMATION_CONFIG_TYPE, id);
 
 		Document d;
 		d.Parse(data);

@@ -7,7 +7,7 @@ namespace lockstep
 	HMoveComponent::HMoveComponent(World* pWorld, Entity* pEntity, int id):Component(pWorld, pEntity),
 		mSpeed(0), mEnable(false), mXMoveReduce(-2),mD(0)
 	{
-		const char* content = Controller::GetInstance()->InvokeReadFile(COMPONENT_CONFIG_FILE, id, "hmove");
+		const char* content = Controller::GetInstance()->ReadFile(COMPONENT_CONFIG_FILE, id, "hmove");
 		Document data;
 		data.Parse(content);
 

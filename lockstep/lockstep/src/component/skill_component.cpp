@@ -49,7 +49,7 @@ void SkillComponent::on_use_skill(int index)
 			mPCurSkill = t;
 			mUseIndex = index;
 			mPEntity->SetIsSkill(true);
-			Controller::GetInstance()->InvokeUseSkill(mPEntity->GetId(), t->GetId(), index, ani_index);
+			Controller::GetInstance()->UseSkill(mPEntity->GetId(), t->GetId(), index, ani_index);
 
 
 		}
@@ -106,6 +106,6 @@ bool SkillComponent::IsUsingSkill()
 void SkillComponent::on_end()
 {
 	mPEntity->SetIsSkill(false);
-	Controller::GetInstance()->InvokeSkillEnd(mPEntity->GetId(), mPCurSkill->GetId(), mUseIndex, mPCurSkill->GetUsedIndex());
+	Controller::GetInstance()->SkillEnd(mPEntity->GetId(), mPCurSkill->GetId(), mUseIndex, mPCurSkill->GetUsedIndex());
 	mPCurSkill = nullptr;
 }

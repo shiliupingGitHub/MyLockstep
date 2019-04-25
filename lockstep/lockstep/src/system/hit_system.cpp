@@ -45,7 +45,7 @@ void HitSystem::tick()
 				pOutEntity->SetFrozen(h.frozen);
 
 				hurt_data hurt = { 0 };
-				Controller::GetInstance()->InvokeHurt(pOutEntity->GetId(), hurt);
+				Controller::GetInstance()->Hurt(pOutEntity->GetId(), hurt);
 			}
 		}
 	}

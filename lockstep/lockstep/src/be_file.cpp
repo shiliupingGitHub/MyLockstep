@@ -6,7 +6,7 @@ BeFile::BeFile(const char* fileName)
 {
 	 int id = atoi(fileName + 3);
 
-	mContent = Controller::GetInstance()->InvokeReadFile(BEHAVOUR_CONFIG_TYPE, id);
+	mContent = Controller::GetInstance()->ReadFile(BEHAVOUR_CONFIG_TYPE, id);
 
 	int a = 0;
 }

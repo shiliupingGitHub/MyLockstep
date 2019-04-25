@@ -7,7 +7,7 @@ AIComponent::AIComponent(World* pWorld, Entity* pEntity, int data_id )
 	:Component(pWorld, pEntity),mPAgent(nullptr)
 {
 
-	const char* content = Controller::GetInstance()->InvokeReadFile(COMPONENT_CONFIG_FILE, data_id, "ai");
+	const char* content = Controller::GetInstance()->ReadFile(COMPONENT_CONFIG_FILE, data_id, "ai");
 	Document data;
 	data.Parse(content);
 	mPAgent = behaviac::Agent::Create<AIAgent>();
